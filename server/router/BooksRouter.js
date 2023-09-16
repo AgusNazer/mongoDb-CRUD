@@ -43,33 +43,33 @@
 
 // // CREATE
 // BookRouter.post('/book', async (req, res) => {
-//     try {
-//         const { title, description, authorId} = req.body;
-//         if(!title || !description || !authorId ){
-//             return res.status(400).send({
-//                success:false,
-//                message: 'Faltan completar datos'
-//             })
-//          }
+    // try {
+    //     const { title, description, authorId} = req.body;
+    //     if(!title || !description || !authorId ){
+    //         return res.status(400).send({
+    //            success:false,
+    //            message: 'Faltan completar datos'
+    //         })
+    //      }
 
-//          let book = new Book ({
-//             title,
-//             description,
-//             author: authorId
-//         })
-//         await book.save()
-//         return res.status(200).send({
-//             success: true,
-//             message: 'Book created succesfully',
-//             book,
-//         })
+    //      let book = new Book ({
+    //         title,
+    //         description,
+    //         author: authorId
+    //     })
+    //     await book.save()
+    //     return res.status(200).send({
+    //         success: true,
+    //         message: 'Book created succesfully',
+    //         book,
+    //     })
 
-//     } catch (error) {
-//         return res.status(500).send({
-//             success:false,
-//             message: error.message
-//         })
-//     }
+    // } catch (error) {
+    //     return res.status(500).send({
+    //         success:false,
+    //         message: error.message
+    //     })
+    // }
 // })
 
 // module.exports = BookRouter;
