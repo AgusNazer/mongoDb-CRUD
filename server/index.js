@@ -15,7 +15,8 @@ app.use(express.urlencoded())
 // app.use('/api', BookRouter)
 
 // enrutado con controladores
-app.use('/api', require('./routes/AuthorRouter'))
+app.use('/api', require('./routes/AuthorRouter'));
+app.use('/api', require('./routes/BooksRouter'));
 
 // conexion con data base
 const URL = process.env.MONGO_DB
